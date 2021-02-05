@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>节流防抖</title>
+  <style>
+    div {
+      margin-top: 20px;
+    }
+
+    .single-text {
+      margin-top: 0;
+      width: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .multiple-text {
+      width: 100px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 100px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="single-text">
+    <span>单行文本超出</span>
+  </div>
+  <div class="multiple-text">
+    <span>多行文本超出多行文本超出多行文本超出多行文本超出 </span>
+  </div>
+  <div class="triangle">
+
+  </div>
+</body>
+
+</html>
